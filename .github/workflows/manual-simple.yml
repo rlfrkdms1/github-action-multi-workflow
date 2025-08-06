@@ -7,7 +7,6 @@ on:
         description: '어느 환경에 배포할까요?'
         required: true
         default: staging
-        type: choice
         options:
           - staging
           - production
