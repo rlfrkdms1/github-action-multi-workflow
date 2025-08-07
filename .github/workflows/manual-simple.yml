@@ -17,6 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 선택한 환경을 출력합니다
-        env:
-          ENVIRONMENT: ${{ github.event.inputs.environment }}
-        run: echo "선택한 환경: $ENVIRONMENT"
+        run: echo "선택한 환경: ${{ github.event.inputs.environment }}"
